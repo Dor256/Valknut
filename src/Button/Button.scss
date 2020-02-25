@@ -1,9 +1,9 @@
-button {
+.val {
     background-color: #bfbfbf;
     width: 120px;
     height: 45px;
     border: none;
-    border-radius: 10px;
+    border-radius: 100px;
     color: #6b6b6b;
     text-transform: uppercase;
     font-weight: 700;
@@ -46,5 +46,9 @@ button {
         &:active {
             background-color: #2b822f;
         }
+    }
+
+    &.test {
+        border-radius: 10px;
     }
 }
