@@ -1,4 +1,4 @@
-.val {
+button.val {
     background-color: #bfbfbf;
     width: 120px;
     height: 45px;
@@ -48,7 +48,29 @@
         }
     }
 
-    &.test {
-        border-radius: 10px;
+    &.yellow {
+        background-color: #fbbd08;
+        color: white;
+
+        &:hover {
+            background-color: #eeb50b;
+        }
+
+        &:active {
+            background-color: #dda90d;
+        }
+    }
+
+    &.red {
+        background-color: #cf2929;
+        color: white;
+
+        &:hover {
+            background-color: #c02525;
+        }
+
+        &:active {
+            background-color: #ad2020;
+        }
     }
 }
