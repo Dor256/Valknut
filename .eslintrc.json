@@ -1,0 +1,44 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "semi-style": "warn",
+        "semi": [1, "always", {"omitLastInOneLineBlock": true}],
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/member-delimiter-style": ["warn", {
+            "multiline": {
+                "delimiter": "comma",
+                "requireLast": false
+            },
+            "singleline": {
+                "delimiter": "comma",
+                "requireLast": false
+            }
+        }],
+        "react/prop-types": 0,
+        "object-curly-spacing": ["warn", "always"],
+        "react/jsx-wrap-multilines": ["warn", { "return": "parens-new-line" }],
+        "jsx-quotes": ["warn", "prefer-single"]
+    }
+}

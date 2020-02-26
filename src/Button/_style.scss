@@ -1,7 +1,8 @@
 button.val {
+    display: inline-block;
     background-color: #bfbfbf;
-    width: 120px;
-    height: 45px;
+    min-width: 120px;
+    min-height: 45px;
     border: none;
     border-radius: 100px;
     color: #6b6b6b;
@@ -20,6 +21,27 @@ button.val {
 
     &:active {
         background-color: #9e9e9e;
+    }
+
+    &.inverted {
+        
+        &.blue {
+            background-color: transparent;
+            border: 1px solid #438abf;
+            color: #438abf;
+
+            &:hover {
+                background-color: transparent;
+                border: 1px solid #3978a8;
+                color: #3978a8;
+            }
+    
+            &:active {
+                background-color: transparent;
+                border: 1px solid #316b97;
+                color: #316b97;
+            }
+        }
     }
 
     &.blue {
@@ -71,6 +93,84 @@ button.val {
 
         &:active {
             background-color: #ad2020;
+        }
+    }
+
+    &.black {
+        background-color: black;
+        color: white;
+
+        &:hover {
+            background-color: #141414;
+        }
+
+        &:active {
+            background-color: #242424;
+        }
+    }
+
+    &.purple {
+        background-color: #8722ba;
+        color: white;
+
+        &:hover {
+            background-color: #7a1ea8;
+        }
+
+        &:active {
+            background-color: #6d1b96;
+        }
+    }
+
+    &.violet {
+        background-color: #7b5f96;
+        color: white;
+
+        &:hover {
+            background-color: #6d5485;
+        }
+
+        &:active {
+            background-color: #634d78;
+        }
+    }
+
+    &.teal {
+        background-color: #67b5a8;
+        color: white;
+
+        &:hover {
+            background-color: #5ca195;
+        }
+
+        &:active {
+            background-color: #57998e;
+        }
+    }
+
+    &.orange {
+        background-color: #d48919;
+        color: white;
+
+        &:hover {
+            background-color: #cc8416;
+        }
+
+        &:active {
+            background-color: #c27e15;
+        }
+    }
+
+    &.brown {
+        background-color: #915411;
+        color: white;
+
+        &:hover {
+            background-color: #8c510f;
+        }
+
+        &:active {
+            background-color: #80490d;
         }
     }
 }
