@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { Button } from '.';
 
 storiesOf('Button', module)
-  .add('Reguler', () => <Button>Regular</Button>)
+  .add('Regular', () => <Button>Regular</Button>)
   .add('Green', () => <Button color='green'>Green</Button>)
   .add('Yellow', () => <Button color='yellow'>Yellow</Button>)
   .add('Red', () => <Button color='red'>Red</Button>)
