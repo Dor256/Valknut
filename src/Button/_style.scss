@@ -23,7 +23,7 @@ button.val {
         background-color: #9e9e9e;
     }
 
-    &.inverted {
+    &.basic {
         
         &.blue {
             background-color: transparent;
@@ -40,6 +40,168 @@ button.val {
                 background-color: transparent;
                 border: 1px solid #316b97;
                 color: #316b97;
+            }
+        }
+
+        &.green {
+            background-color: transparent;
+            border: 1px solid #339c38;
+            color: #339c38;
+
+            &:hover {
+                background-color: transparent;
+                border: 1px solid #309135;
+                color: #309135;
+            }
+    
+            &:active {
+                background-color: transparent;
+                border: 1px solid #2b822f;
+                color: #2b822f;
+            }
+        }
+
+        &.yellow {
+            background-color: transparent;
+            border: 1px solid #fbbd08;
+            color: #fbbd08;
+
+            &:hover {
+                background-color: transparent;
+                border: 1px solid #eeb50b;
+                color: #eeb50b;
+            }
+    
+            &:active {
+                background-color: transparent;
+                border: 1px solid #dda90d;
+                color: #dda90d;
+            }
+        }
+
+        &.red {
+            background-color: transparent;
+            border: 1px solid #cf2929;
+            color: #cf2929;
+
+            &:hover {
+                background-color: transparent;
+                border: 1px solid #c02525;
+                color: #c02525;
+            }
+    
+            &:active {
+                background-color: transparent;
+                border: 1px solid #ad2020;
+                color: #ad2020;
+            }
+        }
+
+        &.black {
+            background-color: transparent;
+            border: 1px solid black;
+            color: black;
+
+            &:hover {
+                background-color: transparent;
+                border: 1px solid #141414;
+                color: #141414;
+            }
+    
+            &:active {
+                background-color: transparent;
+                border: 1px solid #242424;
+                color: #242424;
+            }
+        }
+
+        &.purple {
+            background-color: transparent;
+            border: 1px solid #8722ba;
+            color: #8722ba;
+
+            &:hover {
+                background-color: transparent;
+                border: 1px solid #7a1ea8;
+                color: #7a1ea8;
+            }
+    
+            &:active {
+                background-color: transparent;
+                border: 1px solid #6d1b96;
+                color: #6d1b96;
+            }
+        }
+
+        &.violet {
+            background-color: transparent;
+            border: 1px solid #7b5f96;
+            color: #7b5f96;
+
+            &:hover {
+                background-color: transparent;
+                border: 1px solid #6d5485;
+                color: #6d5485;
+            }
+    
+            &:active {
+                background-color: transparent;
+                border: 1px solid #634d78;
+                color: #634d78;
+            }
+        }
+
+        &.teal {
+            background-color: transparent;
+            border: 1px solid #67b5a8;
+            color: #67b5a8;
+
+            &:hover {
+                background-color: transparent;
+                border: 1px solid #5ca195;
+                color: #5ca195;
+            }
+    
+            &:active {
+                background-color: transparent;
+                border: 1px solid #57998e;
+                color: #57998e;
+            }
+        }
+
+        &.orange {
+            background-color: transparent;
+            border: 1px solid #d48919;
+            color: #d48919;
+
+            &:hover {
+                background-color: transparent;
+                border: 1px solid #cc8416;
+                color: #cc8416;
+            }
+    
+            &:active {
+                background-color: transparent;
+                border: 1px solid #c27e15;
+                color: #c27e15;
+            }
+        }
+
+        &.brown {
+            background-color: transparent;
+            border: 1px solid #915411;
+            color: #915411;
+
+            &:hover {
+                background-color: transparent;
+                border: 1px solid #8c510f;
+                color: #8c510f;
+            }
+    
+            &:active {
+                background-color: transparent;
+                border: 1px solid #80490d;
+                color: #80490d;
             }
         }
     }
