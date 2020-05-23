@@ -3,6 +3,7 @@ nav.val {
   display: flex;
   padding: 0 10px;
   align-items: center;
+  text-align: center;
   top: 0;
   left: 0;
   height: 50px;
@@ -11,11 +12,34 @@ nav.val {
   box-shadow: -1px -12px 10px 10px black;
   color: white;
 
+  & > * {
+    margin-right: 20px;
+  }
+
   &.purple {
     background-color: rgb(110, 76, 155);
   }
 
   &.blue {
-    background-color: #29446f;
+    background-color: #6486bb;
+  }
+}
+
+div.val.hamburger {
+  display: none;
+  position: absolute;
+  transform: rotate(90deg);
+  align-self: center;
+  right: 40px;
+  font-size: 170%;
+  cursor: pointer;
+  user-select: none;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  div.val.hamburger {
+    display: block;
   }
 }

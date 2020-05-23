@@ -6,7 +6,7 @@ export type ContainerProps = {
     flex?: boolean
 } & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 
-export const Container = (props: ContainerProps) => {
+export function Container(props: ContainerProps) {
     const { flex, children, className, ...divProps } = props;
     const cssClass = `${flex ? ' flex' : ''}${className ? ` ${className}` : ''}`;
 
@@ -15,4 +15,4 @@ export const Container = (props: ContainerProps) => {
             {children}
         </div>
     );
-};
+}

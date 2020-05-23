@@ -7,9 +7,9 @@ export type ButtonProps = {
     basic?: boolean
 } & React.DetailedHTMLProps<React.HTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
 
-export const Button = (props: ButtonProps) => {
+export function Button(props: ButtonProps) {
     const { children, className, color, basic, ...buttonProps } = props;
     const cssClass = `${basic ? ' basic' : ''}${color ? ` ${color}` : ''}${className ? ` ${className}` : ''}`;
 
     return <button {...buttonProps} className={`val${cssClass}`}>{children}</button>;
-};
+}

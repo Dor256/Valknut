@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { Navbar } from '.';
 
 function renderBrand(navType: string) {
-    return <h1 style={{ textAlign: 'center' }}>{navType}</h1>;
+    return <h1>{navType}</h1>;
 }
 
 storiesOf('Navbar', module)
