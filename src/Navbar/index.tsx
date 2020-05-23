@@ -2,12 +2,13 @@ import React from 'react';
 import './_style.scss';
 
 export type NavbarProps = {
-    children?: React.ReactNode
+    children?: React.ReactNode,
+    color?: 'blue' | 'green' | 'yellow' | 'red' | 'black' | 'purple' | 'violet' | 'teal' | 'orange' | 'brown'
 } & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 
 export const Navbar = (props: NavbarProps) => {
-    const { children, className, ...divProps } = props;
-    const cssClass = `${className ? `${className}` : ''}`;
+    const { children, color, className, ...divProps } = props;
+    const cssClass = `${color ? ` ${color}` : ''}${className ? ` ${className}` : ''}`;
 
     return (
         <nav {...divProps} className={`val${cssClass}`}>

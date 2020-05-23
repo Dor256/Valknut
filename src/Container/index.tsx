@@ -8,7 +8,7 @@ export type ContainerProps = {
 
 export const Container = (props: ContainerProps) => {
     const { flex, children, className, ...divProps } = props;
-    const cssClass = `${flex ? ' flex ' : ''}${className ? `${className}` : ''}`;
+    const cssClass = `${flex ? ' flex' : ''}${className ? ` ${className}` : ''}`;
 
     return (
         <div {...divProps} className={`val${cssClass}`}>

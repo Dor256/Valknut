@@ -9,7 +9,7 @@ export type ButtonProps = {
 
 export const Button = (props: ButtonProps) => {
     const { children, className, color, basic, ...buttonProps } = props;
-    const cssClass = `${basic ? ' basic' : ''}${color ? ` ${color} ` : ''}${className ? `${className}` : ''}`;
+    const cssClass = `${basic ? ' basic' : ''}${color ? ` ${color}` : ''}${className ? ` ${className}` : ''}`;
 
     return <button {...buttonProps} className={`val${cssClass}`}>{children}</button>;
 };

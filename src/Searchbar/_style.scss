@@ -1,0 +1,24 @@
+input.val.val-search {
+  width: 25%;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px 1px #e1e5e8;
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #20455e;
+  outline: 0;
+
+  &.rounded {
+    width: 25%;
+    border-radius: 100px;
+    padding: 10px 20px;
+    box-shadow: 0.4px 0.8px 4.5px -1px #939799;
+  }
+
+  &::placeholder {
+    color: #b6c1cd;
+  }
+}
