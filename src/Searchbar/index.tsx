@@ -11,7 +11,7 @@ export function Searchbar(props: SearchbarProps) {
   return (
     <input
       {...inputProps}
-      type='text'
+      type='search'
       className={`val val-search${cssClass}`}
     />
   );
