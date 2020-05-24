@@ -16,4 +16,4 @@ export function Navbar(props: NavbarProps) {
             <div className='val hamburger'>|||</div>
         </nav>
     );
-}
+} 

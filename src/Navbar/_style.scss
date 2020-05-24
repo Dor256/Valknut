@@ -13,7 +13,14 @@ nav.val {
   color: white;
 
   & > * {
-    margin-right: 20px;
+    margin-right: 25px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  & > :first-child {
+    margin-right: 33px;
   }
 
   &.purple {
@@ -22,6 +29,18 @@ nav.val {
 
   &.blue {
     background-color: #6486bb;
+
+    & > *:hover {
+      background-color: #5b7aac;
+    }
+
+    & > :first-child:hover {
+      background-color: #6486bb;
+    }
+
+    div.val.hamburger:hover {
+      background-color: #5b7aac;
+    }
   }
 }
 
@@ -39,6 +58,10 @@ div.val.hamburger {
 }
 
 @media only screen and (max-width: 768px) {
+  nav.val > *:not(:first-child) {
+    display: none;
+  }
+
   div.val.hamburger {
     display: block;
   }
