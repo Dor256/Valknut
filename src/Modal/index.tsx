@@ -4,12 +4,18 @@ import './_style.scss';
 
 export type ModalProps = {
   show: boolean,
+  onDismiss(): void,
   allowScroll?: boolean
 } & React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>
 
 export function Modal(props: ModalProps) {
+  function handleClick(event: React.MouseEvent<HTMLDivElement>) {
+    event.stopPropagation();
+    props.onClick && props.onClick(event);
+  }
+
   if (props.show) {
-    const { className, children, ...modalProps } = props;
+    const { className, children, onDismiss, ...modalProps } = props;
     const cssClass = className ? ` ${className}` : '';
     let modalBase = document.getElementById('val-modal');
     if (!modalBase) {
@@ -20,8 +26,8 @@ export function Modal(props: ModalProps) {
 
     document.body.style.overflow = props.allowScroll ? 'auto' : 'hidden';
     return ReactDOM.createPortal(
-      <div className={`val-modal-backdrop`}>
-        <div className={`val-modal${cssClass}`} {...modalProps}>
+      <div className={`val-modal-backdrop`} onClick={onDismiss}>
+        <div className={`val-modal${cssClass}`} {...modalProps} onClick={handleClick}>
           {children}
         </div>
       </div>,
