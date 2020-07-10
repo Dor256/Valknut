@@ -21,4 +21,8 @@ input.val.val-search {
   &::placeholder {
     color: #b6c1cd;
   }
+
+  &::-webkit-search-cancel-button:hover {
+    cursor: pointer;
+  }
 }

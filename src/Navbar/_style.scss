@@ -1,3 +1,5 @@
+@import '../themes.scss';
+
 nav.val {
   position: fixed;
   display: flex;
@@ -28,18 +30,36 @@ nav.val {
   }
 
   &.blue {
-    background-color: #6486bb;
+    background-color: map-get($map: $blue, $key: 'navbar');
 
-    & > *:hover {
-      background-color: #5b7aac;
+    & > *:not(.val-search):hover {
+      background-color: map-get($map: $blue, $key: 'navbarHover');
     }
 
     & > :first-child:hover {
-      background-color: #6486bb;
+      background-color: map-get($map: $blue, $key: 'navbar');
     }
 
     div.val.hamburger:hover {
-      background-color: #5b7aac;
+      background-color: map-get($map: $blue, $key: 'navbarHover');
+    }
+  }
+
+  input.val-search {
+    box-shadow: none;
+    margin-bottom: 0;
+    cursor: text;
+    padding: 10px;
+    width: 15%;
+    height: 65%;
+
+    &.rounded {
+      box-shadow: none;
+      margin-bottom: 0;
+      cursor: text;
+      padding: 10px;
+      width: 15%;
+      height: 70%;
     }
   }
 }

@@ -1,338 +1,340 @@
+@import '../themes.scss';
+
 button.val {
-    display: inline-block;
-    background-color: #bfbfbf;
-    min-width: 120px;
-    min-height: 45px;
-    border: none;
-    border-radius: 100px;
-    color: #6b6b6b;
-    text-transform: uppercase;
-    font-weight: 700;
-    cursor: pointer;
-    font-size: 12px;
+  display: inline-block;
+  background-color: #bfbfbf;
+  min-width: 120px;
+  min-height: 45px;
+  border: none;
+  border-radius: 100px;
+  color: #6b6b6b;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 12px;
 
-    &:focus {
-        outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
 
-    &:hover {
-        background-color: #b0b0b0;
-    }
+  &:hover {
+    background-color: #b0b0b0;
+  }
 
-    &:active {
-        background-color: #9e9e9e;
-    }
+  &:active {
+    background-color: #9e9e9e;
+  }
 
-    &.basic {
-        
-        &.blue {
-            background-color: transparent;
-            border: 1px solid #438abf;
-            color: #438abf;
-
-            &:hover {
-                background-color: transparent;
-                border: 1px solid #3978a8;
-                color: #3978a8;
-            }
-    
-            &:active {
-                background-color: transparent;
-                border: 1px solid #316b97;
-                color: #316b97;
-            }
-        }
-
-        &.green {
-            background-color: transparent;
-            border: 1px solid #339c38;
-            color: #339c38;
-
-            &:hover {
-                background-color: transparent;
-                border: 1px solid #309135;
-                color: #309135;
-            }
-    
-            &:active {
-                background-color: transparent;
-                border: 1px solid #2b822f;
-                color: #2b822f;
-            }
-        }
-
-        &.yellow {
-            background-color: transparent;
-            border: 1px solid #fbbd08;
-            color: #fbbd08;
-
-            &:hover {
-                background-color: transparent;
-                border: 1px solid #eeb50b;
-                color: #eeb50b;
-            }
-    
-            &:active {
-                background-color: transparent;
-                border: 1px solid #dda90d;
-                color: #dda90d;
-            }
-        }
-
-        &.red {
-            background-color: transparent;
-            border: 1px solid #cf2929;
-            color: #cf2929;
-
-            &:hover {
-                background-color: transparent;
-                border: 1px solid #c02525;
-                color: #c02525;
-            }
-    
-            &:active {
-                background-color: transparent;
-                border: 1px solid #ad2020;
-                color: #ad2020;
-            }
-        }
-
-        &.black {
-            background-color: transparent;
-            border: 1px solid black;
-            color: black;
-
-            &:hover {
-                background-color: transparent;
-                border: 1px solid #141414;
-                color: #141414;
-            }
-    
-            &:active {
-                background-color: transparent;
-                border: 1px solid #242424;
-                color: #242424;
-            }
-        }
-
-        &.purple {
-            background-color: transparent;
-            border: 1px solid #8722ba;
-            color: #8722ba;
-
-            &:hover {
-                background-color: transparent;
-                border: 1px solid #7a1ea8;
-                color: #7a1ea8;
-            }
-    
-            &:active {
-                background-color: transparent;
-                border: 1px solid #6d1b96;
-                color: #6d1b96;
-            }
-        }
-
-        &.violet {
-            background-color: transparent;
-            border: 1px solid #7b5f96;
-            color: #7b5f96;
-
-            &:hover {
-                background-color: transparent;
-                border: 1px solid #6d5485;
-                color: #6d5485;
-            }
-    
-            &:active {
-                background-color: transparent;
-                border: 1px solid #634d78;
-                color: #634d78;
-            }
-        }
-
-        &.teal {
-            background-color: transparent;
-            border: 1px solid #67b5a8;
-            color: #67b5a8;
-
-            &:hover {
-                background-color: transparent;
-                border: 1px solid #5ca195;
-                color: #5ca195;
-            }
-    
-            &:active {
-                background-color: transparent;
-                border: 1px solid #57998e;
-                color: #57998e;
-            }
-        }
-
-        &.orange {
-            background-color: transparent;
-            border: 1px solid #d48919;
-            color: #d48919;
-
-            &:hover {
-                background-color: transparent;
-                border: 1px solid #cc8416;
-                color: #cc8416;
-            }
-    
-            &:active {
-                background-color: transparent;
-                border: 1px solid #c27e15;
-                color: #c27e15;
-            }
-        }
-
-        &.brown {
-            background-color: transparent;
-            border: 1px solid #915411;
-            color: #915411;
-
-            &:hover {
-                background-color: transparent;
-                border: 1px solid #8c510f;
-                color: #8c510f;
-            }
-    
-            &:active {
-                background-color: transparent;
-                border: 1px solid #80490d;
-                color: #80490d;
-            }
-        }
-    }
-
+  &.basic {
+      
     &.blue {
-        background-color: #438abf;
-        color: white;
+      background-color: transparent;
+      border: 1px solid map-get($map: $blue, $key: 'button');
+      color: map-get($map: $blue, $key: 'button');
 
-        &:hover {
-            background-color: #3978a8;
-        }
+      &:hover {
+        background-color: transparent;
+        border: 1px solid map-get($map: $blue, $key: 'buttonHover');
+        color: map-get($map: $blue, $key: 'buttonHover');
+      }
 
-        &:active {
-            background-color: #316b97;
-        }
+      &:active {
+        background-color: transparent;
+        border: 1px solid map-get($map: $blue, $key: 'buttonActive');
+        color: map-get($map: $blue, $key: 'buttonActive');
+      }
     }
-    
+
     &.green {
-        background-color: #339c38;
-        color: white;
+      background-color: transparent;
+      border: 1px solid #339c38;
+      color: #339c38;
 
-        &:hover {
-            background-color: #309135;
-        }
+      &:hover {
+        background-color: transparent;
+        border: 1px solid #309135;
+        color: #309135;
+      }
 
-        &:active {
-            background-color: #2b822f;
-        }
+      &:active {
+        background-color: transparent;
+        border: 1px solid #2b822f;
+        color: #2b822f;
+      }
     }
 
     &.yellow {
-        background-color: #fbbd08;
-        color: white;
+      background-color: transparent;
+      border: 1px solid #fbbd08;
+      color: #fbbd08;
 
-        &:hover {
-            background-color: #eeb50b;
-        }
+      &:hover {
+        background-color: transparent;
+        border: 1px solid #eeb50b;
+        color: #eeb50b;
+      }
 
-        &:active {
-            background-color: #dda90d;
-        }
+      &:active {
+        background-color: transparent;
+        border: 1px solid #dda90d;
+        color: #dda90d;
+      }
     }
 
     &.red {
-        background-color: #cf2929;
-        color: white;
+      background-color: transparent;
+      border: 1px solid #cf2929;
+      color: #cf2929;
 
-        &:hover {
-            background-color: #c02525;
-        }
+      &:hover {
+        background-color: transparent;
+        border: 1px solid #c02525;
+        color: #c02525;
+      }
 
-        &:active {
-            background-color: #ad2020;
-        }
+      &:active {
+        background-color: transparent;
+        border: 1px solid #ad2020;
+        color: #ad2020;
+      }
     }
 
     &.black {
-        background-color: black;
-        color: white;
+      background-color: transparent;
+      border: 1px solid black;
+      color: black;
 
-        &:hover {
-            background-color: #141414;
-        }
+      &:hover {
+        background-color: transparent;
+        border: 1px solid #141414;
+        color: #141414;
+      }
 
-        &:active {
-            background-color: #242424;
-        }
+      &:active {
+        background-color: transparent;
+        border: 1px solid #242424;
+        color: #242424;
+      }
     }
 
     &.purple {
-        background-color: #8722ba;
-        color: white;
+      background-color: transparent;
+      border: 1px solid #8722ba;
+      color: #8722ba;
 
-        &:hover {
-            background-color: #7a1ea8;
-        }
+      &:hover {
+        background-color: transparent;
+        border: 1px solid #7a1ea8;
+        color: #7a1ea8;
+      }
 
-        &:active {
-            background-color: #6d1b96;
-        }
+      &:active {
+        background-color: transparent;
+        border: 1px solid #6d1b96;
+        color: #6d1b96;
+      }
     }
 
     &.violet {
-        background-color: #7b5f96;
-        color: white;
+      background-color: transparent;
+      border: 1px solid #7b5f96;
+      color: #7b5f96;
 
-        &:hover {
-            background-color: #6d5485;
-        }
+      &:hover {
+        background-color: transparent;
+        border: 1px solid #6d5485;
+        color: #6d5485;
+      }
 
-        &:active {
-            background-color: #634d78;
-        }
+      &:active {
+        background-color: transparent;
+        border: 1px solid #634d78;
+        color: #634d78;
+      }
     }
 
     &.teal {
-        background-color: #67b5a8;
-        color: white;
+      background-color: transparent;
+      border: 1px solid #67b5a8;
+      color: #67b5a8;
 
-        &:hover {
-            background-color: #5ca195;
-        }
+      &:hover {
+        background-color: transparent;
+        border: 1px solid #5ca195;
+        color: #5ca195;
+      }
 
-        &:active {
-            background-color: #57998e;
-        }
+      &:active {
+        background-color: transparent;
+        border: 1px solid #57998e;
+        color: #57998e;
+      }
     }
 
     &.orange {
-        background-color: #d48919;
-        color: white;
+      background-color: transparent;
+      border: 1px solid #d48919;
+      color: #d48919;
 
-        &:hover {
-            background-color: #cc8416;
-        }
+      &:hover {
+        background-color: transparent;
+        border: 1px solid #cc8416;
+        color: #cc8416;
+      }
 
-        &:active {
-            background-color: #c27e15;
-        }
+      &:active {
+        background-color: transparent;
+        border: 1px solid #c27e15;
+        color: #c27e15;
+      }
     }
 
     &.brown {
-        background-color: #915411;
-        color: white;
+      background-color: transparent;
+      border: 1px solid #915411;
+      color: #915411;
 
-        &:hover {
-            background-color: #8c510f;
-        }
+      &:hover {
+        background-color: transparent;
+        border: 1px solid #8c510f;
+        color: #8c510f;
+      }
 
-        &:active {
-            background-color: #80490d;
-        }
+      &:active {
+        background-color: transparent;
+        border: 1px solid #80490d;
+        color: #80490d;
+      }
     }
+  }
+
+  &.blue {
+    background-color: map-get($map: $blue, $key: 'button');
+    color: white;
+
+    &:hover {
+      background-color: map-get($map: $blue, $key: 'buttonHover');
+    }
+
+    &:active {
+      background-color: map-get($map: $blue, $key: 'buttonActive');
+    }
+  }
+  
+  &.green {
+    background-color: #339c38;
+    color: white;
+
+    &:hover {
+      background-color: #309135;
+    }
+
+    &:active {
+      background-color: #2b822f;
+    }
+  }
+
+  &.yellow {
+    background-color: #fbbd08;
+    color: white;
+
+    &:hover {
+      background-color: #eeb50b;
+    }
+
+    &:active {
+      background-color: #dda90d;
+    }
+  }
+
+  &.red {
+    background-color: #cf2929;
+    color: white;
+
+    &:hover {
+      background-color: #c02525;
+    }
+
+    &:active {
+      background-color: #ad2020;
+    }
+  }
+
+  &.black {
+    background-color: black;
+    color: white;
+
+    &:hover {
+      background-color: #141414;
+    }
+
+    &:active {
+      background-color: #242424;
+    }
+  }
+
+  &.purple {
+    background-color: #8722ba;
+    color: white;
+
+    &:hover {
+      background-color: #7a1ea8;
+    }
+
+    &:active {
+      background-color: #6d1b96;
+    }
+  }
+
+  &.violet {
+    background-color: #7b5f96;
+    color: white;
+
+    &:hover {
+      background-color: #6d5485;
+    }
+
+    &:active {
+      background-color: #634d78;
+    }
+  }
+
+  &.teal {
+    background-color: #67b5a8;
+    color: white;
+
+    &:hover {
+      background-color: #5ca195;
+    }
+
+    &:active {
+      background-color: #57998e;
+    }
+  }
+
+  &.orange {
+    background-color: #d48919;
+    color: white;
+
+    &:hover {
+      background-color: #cc8416;
+    }
+
+    &:active {
+      background-color: #c27e15;
+    }
+  }
+
+  &.brown {
+    background-color: #915411;
+    color: white;
+
+    &:hover {
+      background-color: #8c510f;
+    }
+
+    &:active {
+      background-color: #80490d;
+    }
+  }
 }

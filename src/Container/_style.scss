@@ -1,9 +1,9 @@
 div.val {
-    max-width: 1000px;
-    margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
 
-    &.flex {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  &.flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
