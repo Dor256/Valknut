@@ -26,7 +26,19 @@ nav.val {
   }
 
   &.purple {
-    background-color: rgb(110, 76, 155);
+    background-color: map-get($map: $purple, $key: 'navbar');
+
+    & > *:not(.val-search):hover {
+      background-color: map-get($map: $purple, $key: 'navbarHover');
+    }
+
+    & > :first-child:hover {
+      background-color: map-get($map: $purple, $key: 'navbar');
+    }
+
+    div.val.hamburger:hover {
+      background-color: map-get($map: $purple, $key: 'navbarHover');
+    }
   }
 
   &.blue {

@@ -9,7 +9,6 @@ function renderBrand(navType: string) {
 
 storiesOf('Navbar', module)
   .add('Regular', () => <Navbar>{renderBrand('Regular')}</Navbar>)
-  .add('Purple', () => <Navbar color='purple'>{renderBrand('Purple')}</Navbar>)
-  .add('Blue', () => <Navbar color='blue'>{renderBrand('Blue')}</Navbar>)
-  .add('With Items', () => <Navbar color='blue'><>{renderBrand('Brand')}<a>Link</a><a>Link</a></></Navbar>)
+  .add('Purple', () => <Navbar color='purple'><>{renderBrand('Purple')}<a>Link</a><a>Link</a></></Navbar>)
+  .add('Blue', () => <Navbar color='blue'><>{renderBrand('Blue')}<a>Link</a><a>Link</a></></Navbar>)
   .add('With search bar', () => <Navbar color='blue'><>{renderBrand('Brand')}<Searchbar placeholder='Search...' /></></Navbar>);
