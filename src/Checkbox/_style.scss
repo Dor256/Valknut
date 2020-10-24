@@ -1,0 +1,56 @@
+div.val.val-checkbox-container {
+  display: inline-flex;
+
+  &:hover input.val.val-checkbox:not(:checked) ~ span.val.val-checkmark {
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+    background-color: #ccc;
+  }
+}
+
+input.val.val-checkbox {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+
+  &:checked + span.val.val-checkmark:after {
+      content: "\2713\0020";
+      color: white;
+      text-align: center;
+      padding-top: 4px;
+      display: block;
+  }
+
+  &:checked + span.val.val-checkmark {
+    background-color: #3b92cc;
+  }
+
+  &:checked ~ label.val.val-checkbox-label.strikethrough {
+    text-decoration: line-through;
+  }
+}
+
+span.val.val-checkmark {
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 7px;
+  margin-right: 10px;
+  cursor: pointer;
+
+  &:after {
+    content: "";
+    display: none;
+  }
+}
+
+label.val.val-checkbox-label {
+  padding-top: 3px;
+}
